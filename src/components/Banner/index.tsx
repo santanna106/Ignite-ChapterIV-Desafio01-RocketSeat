@@ -1,13 +1,17 @@
-import { Image,Center  } from "@chakra-ui/react";
+import { Image,Center, ImgProps  } from "@chakra-ui/react";
 
-export default function Banner() {
+interface BannerProps extends ImgProps {
+  src:string;
+}
+
+export default function Banner({src} :BannerProps) {
     return(
         
-            <Center w="100%"  >
+            <Center w="100%"   >
                 <Image
-                  src="/images/Banner.svg"
-                  alt="Banner"
-                  w="100%" />
+                  src={src}
+                  w="100%"
+                 />
             </Center>
        
    );

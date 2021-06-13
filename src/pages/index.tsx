@@ -9,9 +9,9 @@ export default function Home() {
    
     <>
       <Box marginBottom={20}>
-      <VStack spacing={12}>
+      <VStack spacing={12} >
         <Header />
-        <Banner />
+        <Banner src="/images/Banner.svg"     />
         <ControlTipoViagem />
         <Box h={1} w={90} bg={'blue.800'} />
         <Box>
