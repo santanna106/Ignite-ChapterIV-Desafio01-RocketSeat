@@ -77,49 +77,45 @@ export default function ControlTipoViagem(){
             } else {
 
                 return(
-                    <Grid templateColumns="repeat(5, 1fr)"
-                          templateRows="repeat(3, 1fr)" gap={4}>
-                        <GridItem colSpan={2}>
+                    <Flex flexDirection="column">
+                        <Flex flexDirection="row" mb={15}>
+                            <Flex w="80%" justifyContent="flex-start" alignItems="flex-start">
+                                <Image
+                                    h="30"
+                                    w="30"
+                                    src="/images/NightlifeMobile.svg"
+                                    alt="Nightlife"
+                                    />
+                            </Flex> 
+                            <Flex  w="50%" justifyContent="flex-end" alignItems="flex-end">
+                                <Image
+                                    h="30"
+                                    w="30"
+                                    src="/images/BeachMobile.svg"
+                                    alt="Beach"
+                                    />
+                            </Flex> 
+                        </Flex>
+                        <Flex flexDirection="row" mb={15}>
                             <Box>
                                 <Image
-                                h="30"
-                                w="30"
-                                src="/images/NightlifeMobile.svg"
-                                alt="Nightlife"
-                                />
+                                    h="30"
+                                    w="30"
+                                    src="/images/ModernMobile.svg"
+                                    alt="Modern"
+                                    />
                             </Box> 
-                        </GridItem>
-                        <GridItem colSpan={2}>
-                            <Box>
-                                <Image
-                                h="30"
-                                w="30"
-                                src="/images/BeachMobile.svg"
-                                alt="Beach"
-                                />
-                            </Box> 
-                        </GridItem>
-                        <GridItem colSpan={2}>
-                            <Box>
-                                <Image
-                                h="30"
-                                w="30"
-                                src="/images/ModernMobile.svg"
-                                alt="Modern"
-                                />
-                            </Box> 
-                        </GridItem>
-                        <GridItem colSpan={2} >
-                            <Box>
+                            <Flex  w="60%" justifyContent="flex-end" alignItems="flex-end">
                                 <Image
                                 h="30"
                                 w="30"
                                 src="/images/ClassicMobile.svg"
-                                alt="Classic"
+                                alt="Beach"
                                 />
-                            </Box> 
-                        </GridItem>
-                        <GridItem  colStart={2} colEnd={4}  >
+                            </Flex> 
+                           
+                        </Flex>
+                        <Flex flexDirection="row" alignItems="center" justifyContent="center" mb={15}>
                             <Box>
                                 <Image
                                 h="30"
@@ -128,8 +124,10 @@ export default function ControlTipoViagem(){
                                 alt="More"
                                 />
                             </Box> 
-                        </GridItem>
-                     </Grid>
+                        </Flex>
+                       
+                   </Flex>
+                   
                   )
             }
             

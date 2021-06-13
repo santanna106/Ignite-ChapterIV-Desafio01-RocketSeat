@@ -13,7 +13,7 @@ export default function Home() {
         <Header />
         <Banner />
         <ControlTipoViagem />
-        <Divider orientation="horizontal" borderWidth={10} width={90}  />
+        <Box h={1} w={90} bg={'blue.800'} />
         <Box>
             <Image
                h="100"
