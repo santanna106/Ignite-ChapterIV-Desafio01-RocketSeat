@@ -67,22 +67,22 @@ export default function InfoContinentes (){
                     </HStack>
                 </Box>
             </Flex>
-            <Flex h="700"  bg="tomato"  w="70%" flexDirection="column">
+            <Flex h="700"  w="70%" flexDirection="column">
                 <Flex mb="10" justifyContent="flex-start" alignItems="flex-start">
                     <Text
                         fontFamily="Poppins"
                         fontWeight="600"
-                        fontSize="24px"
+                        fontSize="36px"
                         textAlign="center"
                     >Cidades + 100</Text>
                 </Flex>
-                <Wrap spacing="50px">
-                    <WrapItem>
-                        <Center w="256px" h="279px" bg="red.200" borderRadius={5}>
+                <Wrap spacing="50px" >
+                    <WrapItem >
+                        <Center w="256px" h="279px"  borderRadius={5} borderColor={'yellow.300'} borderWidth={1} >
                           <Flex w="100%" h="100%"  flexDir="column">
                             <Image src={'/images/LondonFoto.svg'} h="173px" w="256px" />
                             <Flex flexDirection="row" h="100%">
-                                <Flex bg="blue.100" 
+                                <Flex  
                                       w="50%"
                                       justifyContent="space-around"
                                       flexDirection="column">
