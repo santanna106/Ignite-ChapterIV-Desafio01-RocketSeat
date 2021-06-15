@@ -1,6 +1,6 @@
 
 import React from "react";
-import {  Image} from '@chakra-ui/react';
+import {  Image,Link as ChakraLink} from '@chakra-ui/react';
 import Link from 'next/link'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,11 +24,10 @@ SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
 
 export default function Cta() {
   
+  const continentes = ['europa','america-do-norte','america-do-sul','asia','africa','oceania']
   
   
   return (
-
-    
     <Swiper 
       cssMode={true}
       navigation={true}
@@ -36,61 +35,24 @@ export default function Cta() {
       mousewheel={true}
       keyboard={true}
       className="mySwiper">
-      <SwiperSlide>
-        <Link href="/Continente/europa">
-          <a>
-            <Image 
-              h="600"
-              w="100%"
-              src="/images/europe.jpg"
-              alt="Europa"
-            />
-          </a>
-         </Link>
-        </SwiperSlide>
       
-      
-      <SwiperSlide>
-        <Image 
-            h="600"
-            w="100%"
-            src="/images/northAmerica.jpg"
-            alt="América do Norte"
-          />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image 
-            h="600"
-            w="100%"
-            src="/images/bahia.jpg"
-            alt="América do Sul"
-          />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image 
-            h="600"
-            w="100%"
-            src="/images/asia.jpg"
-            alt="Asia"
-          />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image 
-            h="600"
-            w="100%"
-            src="/images/africa.jpg"
-            alt="África"
-          />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image 
-            h="600"
-            w="100%"
-            src="/images/oceania.jpg"
-            alt="Oceania"
-          />
-      </SwiperSlide>
-     
+      {
+        continentes.map(elemento => (
+          <SwiperSlide>
+            <ChakraLink href={`/Continente/${elemento}`}>
+          
+                <Image 
+                  h="600"
+                  w="100%"
+                  src={`/images/${elemento}.jpg`}
+                  alt="Europa"
+                />
+            
+            </ChakraLink>
+           </SwiperSlide>
+
+        ))
+      }
   </Swiper>
     
   )
