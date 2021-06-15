@@ -1,6 +1,7 @@
 
-import React, { useRef, useState } from "react";
-import { Box, Image} from '@chakra-ui/react';
+import React from "react";
+import {  Image} from '@chakra-ui/react';
+import Link from 'next/link'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -36,13 +37,19 @@ export default function Cta() {
       keyboard={true}
       className="mySwiper">
       <SwiperSlide>
-        <Image 
-           h="600"
-           w="100%"
-           src="/images/europe.jpg"
-           alt="Europa"
-        />
-      </SwiperSlide>
+        <Link href="/Continente/europa">
+          <a>
+            <Image 
+              h="600"
+              w="100%"
+              src="/images/europe.jpg"
+              alt="Europa"
+            />
+          </a>
+         </Link>
+        </SwiperSlide>
+      
+      
       <SwiperSlide>
         <Image 
             h="600"
