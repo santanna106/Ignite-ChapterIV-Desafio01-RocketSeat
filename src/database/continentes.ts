@@ -45,8 +45,8 @@ export const continentes = [
             cities: [
                 {
                     name:'Salvador',
-                    country:'brasil',
-                    imgName:'brasil',
+                    country:'brazil',
+                    imgName:'brazil',
                 },
                 {
                     name:'Buenos Aires',
@@ -67,7 +67,18 @@ export const continentes = [
             numContries:10,
             countLanguages:30,
             numCities: 28,
-            cities: []
+            cities: [
+                {
+                    name:'Cidade Teste',
+                    country:'canada',
+                    imgName:'canada',
+                },
+                {
+                    name:'New York',
+                    country:'eua',
+                    imgName:'eua',
+                },
+            ]
         },
         {
             id:'oceania',
@@ -76,7 +87,18 @@ export const continentes = [
             numContries:35,
             countLanguages:51,
             numCities: 32,
-            cities: []
+            cities: [
+                {
+                    name:'Sidney',
+                    country:'australia',
+                    imgName:'australia',
+                },
+                {
+                    name:'ChristhChurch',
+                    country:'novazelandia',
+                    imgName:'novazelandia',
+                },
+            ]
         },
         {
             id:'asia',
@@ -85,7 +107,18 @@ export const continentes = [
             numContries:12,
             countLanguages:42,
             numCities: 13,
-            cities: []
+            cities: [
+                {
+                    name:'Tóquio',
+                    country:'japao',
+                    imgName:'japao',
+                },
+                {
+                    name:'Beijing',
+                    country:'china',
+                    imgName:'china',
+                },
+            ]
         },
         {
             id:'africa',
@@ -94,7 +127,18 @@ export const continentes = [
             numContries:40,
             countLanguages:50,
             numCities: 69,
-            cities: []
+            cities: [
+                {
+                    name:'Madikwe',
+                    country:'africadosul',
+                    imgName:'africadosul',
+                },
+                {
+                    name:'Infe',
+                    country:'nigeria',
+                    imgName:'nigeria',
+                },
+            ]
         }
         
 ]
