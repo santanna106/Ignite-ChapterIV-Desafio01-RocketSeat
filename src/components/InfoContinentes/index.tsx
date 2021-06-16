@@ -93,7 +93,7 @@ export default function InfoContinentes (
                             <WrapItem >
                                 <Center w="256px" h="279px"  borderRadius={5} borderColor={'yellow.300'} borderWidth={1} >
                                 <Flex w="100%" h="100%"  flexDir="column">
-                                    <Image src={`/images/${elemento.imgName}.svg`} h="173px" w="256px"/>
+                                    <Image src={ `/images/${elemento.imgName}.svg` ?  `/images/${elemento.imgName}.svg` : `/images/${elemento.imgName}.jpg` } h="173px" w="256px"/>
                                     <Flex flexDirection="row" h="100%">
                                         <Flex  
                                             w="50%"

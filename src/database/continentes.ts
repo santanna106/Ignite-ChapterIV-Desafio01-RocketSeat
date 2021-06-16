@@ -42,7 +42,23 @@ export const continentes = [
             numContries:30,
             countLanguages:20,
             numCities: 17,
-            cities: []
+            cities: [
+                {
+                    name:'Salvador',
+                    country:'brasil',
+                    imgName:'brasil',
+                },
+                {
+                    name:'Buenos Aires',
+                    country:'argentina',
+                    imgName:'argentina',
+                },
+                {
+                    name:'Viña Del Mar',
+                    country:'chile',
+                    imgName:'chile',
+                },
+            ]
         },
         {
             id:'america-do-norte',
